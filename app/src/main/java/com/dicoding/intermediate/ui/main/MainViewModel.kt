@@ -18,13 +18,19 @@ class MainViewModel(private val repository: UserRepository) : ViewModel() {
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
 
+    private val _loading = MutableLiveData<Boolean>()
+    val loading: LiveData<Boolean> = _loading
+
     fun fetchStories() {
         viewModelScope.launch {
+            _loading.value = true
             try {
                 val response = repository.getStories()
                 _stories.value = response.story
             } catch (e: Exception) {
                 _error.value = "Failed to fetch stories: ${e.message}"
+            } finally {
+                _loading.value = false
             }
         }
     }

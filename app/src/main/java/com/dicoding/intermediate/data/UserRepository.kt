@@ -25,12 +25,8 @@ class UserRepository private constructor(
     }
 
     suspend fun getStories(): StoryResponse {
-
         val user = userPreference.getSession().first()
-        val token = user.token
-
-
-        return apiService.getStories("Bearer $token")
+        return apiService.getStories("Bearer ${user.token}")
     }
 
     companion object {

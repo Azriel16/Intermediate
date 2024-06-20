@@ -1,122 +1,126 @@
 [
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/xml_backup_rules.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_baseline_close_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/xml_data_extraction_rules.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\font_poppins.ttf.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\font\\poppins.ttf"
     },
     {
         "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_login.xml.flat",
         "source": "com.dicoding.intermediate.app-main-42:/layout/activity_login.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_welcome.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_welcome.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_close_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_close_24.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_baseline_lock_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/font_poppins.ttf.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/font/poppins.ttf"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_signup.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_signup.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_dicoding.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_dicoding.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_image_signup.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\image_signup.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_signup.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_signup.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_image_welcome.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\image_welcome.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_story_list.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/story_list.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\layout_story_list.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\story_list.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_lock_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_lock_24.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_person_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_person_24.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_image_dicoding.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\image_dicoding.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_login.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_login.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_welcome.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_welcome.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_main.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_main.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\drawable_image_login.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\drawable\\image_login.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_email_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_email_24.xml"
-    },
-    {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-debug-40:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\mipmap-hdpi\\ic_launcher_round.webp"
     }
 ]

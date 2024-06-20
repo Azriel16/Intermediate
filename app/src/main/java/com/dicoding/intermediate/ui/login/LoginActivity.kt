@@ -8,24 +8,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
-import androidx.activity.viewModels
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.intermediate.databinding.ActivityLoginBinding
-import com.dicoding.intermediate.ui.main.MainActivity
-import com.dicoding.intermediate.data.pref.UserModel
-import com.dicoding.intermediate.ui.ViewModelFactory
-import com.dicoding.intermediate.ui.custom.CustomButton
-import com.dicoding.intermediate.ui.custom.CustomEditText
+import com.dicoding.intermediate.ui.signup.SignupActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
-
-    private val token: String = "YOUR_AUTH_TOKEN"
-
-    private val viewModel by viewModels<LoginViewModel> {
-        ViewModelFactory.getInstance(this, token)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,31 +39,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+        binding.signupButton.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.loginButton.setOnClickListener {
-            val email = binding.emailEditText.text.toString()
-            val password = binding.passwordEditText.text.toString()
-
-            if (password.length < 8) {
-                binding.passwordEditTextLayout.error = "Password tidak boleh kurang dari 8 karakter"
-                return@setOnClickListener
-            } else {
-                binding.passwordEditTextLayout.error = null
-            }
-
-            viewModel.saveSession(UserModel(email, token))
-            AlertDialog.Builder(this).apply {
-                setTitle("Success!")
-                setMessage("Anda berhasil login. Silahkan lanjutkan")
-                setPositiveButton("Lanjut") { _, _ ->
-                    val intent = Intent(context, MainActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                    startActivity(intent)
-                    finish()
-
-                }
-                create()
-                show()
-            }
+            // Handle login logic here
         }
     }
 
@@ -86,16 +56,29 @@ class LoginActivity : AppCompatActivity() {
             repeatMode = ObjectAnimator.REVERSE
         }.start()
 
-        val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(500)
-        val emailTextView = ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(500)
-        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(500)
-        val passwordTextView = ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(500)
-        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(500)
-        val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(500)
+        val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(100)
+        val emailTextView =
+            ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(100)
+        val emailEditTextLayout =
+            ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(100)
+        val passwordTextView =
+            ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(100)
+        val passwordEditTextLayout =
+            ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(100)
+        val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(100)
+        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
 
         AnimatorSet().apply {
-            playSequentially(title, emailTextView, emailEditTextLayout, passwordTextView, passwordEditTextLayout, login)
-            startDelay = 500
+            playSequentially(
+                title,
+                emailTextView,
+                emailEditTextLayout,
+                passwordTextView,
+                passwordEditTextLayout,
+                login,
+                signup
+            )
+            startDelay = 100
         }.start()
     }
 }

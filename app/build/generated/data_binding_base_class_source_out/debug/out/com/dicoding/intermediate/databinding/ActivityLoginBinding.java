@@ -48,6 +48,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView passwordTextView;
 
   @NonNull
+  public final CustomButton signupButton;
+
+  @NonNull
   public final TextView titleTextView;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
@@ -55,7 +58,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       @NonNull TextView emailTextView, @NonNull ImageView imageView,
       @NonNull CustomButton loginButton, @NonNull CustomEditText passwordEditText,
       @NonNull TextInputLayout passwordEditTextLayout, @NonNull TextView passwordTextView,
-      @NonNull TextView titleTextView) {
+      @NonNull CustomButton signupButton, @NonNull TextView titleTextView) {
     this.rootView = rootView;
     this.emailEditText = emailEditText;
     this.emailEditTextLayout = emailEditTextLayout;
@@ -65,6 +68,7 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.passwordEditText = passwordEditText;
     this.passwordEditTextLayout = passwordEditTextLayout;
     this.passwordTextView = passwordTextView;
+    this.signupButton = signupButton;
     this.titleTextView = titleTextView;
   }
 
@@ -143,6 +147,12 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.signupButton;
+      CustomButton signupButton = ViewBindings.findChildViewById(rootView, id);
+      if (signupButton == null) {
+        break missingId;
+      }
+
       id = R.id.titleTextView;
       TextView titleTextView = ViewBindings.findChildViewById(rootView, id);
       if (titleTextView == null) {
@@ -151,7 +161,7 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, emailEditText,
           emailEditTextLayout, emailTextView, imageView, loginButton, passwordEditText,
-          passwordEditTextLayout, passwordTextView, titleTextView);
+          passwordEditTextLayout, passwordTextView, signupButton, titleTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

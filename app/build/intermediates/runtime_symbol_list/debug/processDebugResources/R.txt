@@ -3028,7 +3028,6 @@ int drawable ic_search_black_24 0x7f07009e
 int drawable image_dicoding 0x7f07009f
 int drawable image_login 0x7f0700a0
 int drawable image_signup 0x7f0700a1
-int drawable image_welcome 0x7f0700a2
 int drawable indeterminate_static 0x7f0700a3
 int drawable m3_avd_hide_password 0x7f0700a4
 int drawable m3_avd_show_password 0x7f0700a5
@@ -3193,7 +3192,6 @@ int id auto 0x7f090053
 int id autoComplete 0x7f090054
 int id autoCompleteToEnd 0x7f090055
 int id autoCompleteToStart 0x7f090056
-int id background 0x7f090057
 int id barrier 0x7f090058
 int id baseline 0x7f090059
 int id beginOnFirstDraw 0x7f09005a
@@ -3251,7 +3249,6 @@ int id decor_content_parent 0x7f09008d
 int id default_activity_button 0x7f09008e
 int id deltaRelative 0x7f09008f
 int id dependency_ordering 0x7f090090
-int id descTextView 0x7f090091
 int id design_bottom_sheet 0x7f090092
 int id design_menu_item_action_area 0x7f090093
 int id design_menu_item_action_area_stub 0x7f090094
@@ -3322,7 +3319,6 @@ int id grouping 0x7f0900d4
 int id groups 0x7f0900d5
 int id guidelineHorizontal 0x7f0900d6
 int id guidelineHorizontal3 0x7f0900d7
-int id guidelineVertical 0x7f0900d8
 int id header_title 0x7f0900d9
 int id hide_ime_id 0x7f0900da
 int id hideable 0x7f0900db
@@ -3748,7 +3744,6 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_signup 0x7f0c001e
-int layout activity_welcome 0x7f0c001f
 int layout custom_dialog 0x7f0c0020
 int layout design_bottom_navigation_item 0x7f0c0021
 int layout design_bottom_sheet_dialog 0x7f0c0022

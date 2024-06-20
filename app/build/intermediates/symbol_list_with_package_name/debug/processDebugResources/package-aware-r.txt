@@ -3029,7 +3029,6 @@ drawable ic_search_black_24
 drawable image_dicoding
 drawable image_login
 drawable image_signup
-drawable image_welcome
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3194,7 +3193,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id background
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3252,7 +3250,6 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id descTextView
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3323,7 +3320,6 @@ id grouping
 id groups
 id guidelineHorizontal
 id guidelineHorizontal3
-id guidelineVertical
 id header_title
 id hide_ime_id
 id hideable
@@ -3749,7 +3745,6 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_signup
-layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

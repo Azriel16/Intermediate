@@ -14,7 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.intermediate.databinding.ActivityMainBinding
 import com.dicoding.intermediate.ui.ViewModelFactory
 import com.dicoding.intermediate.ui.adapter.StoryAdapter
-import com.dicoding.intermediate.ui.welcome.WelcomeActivity
+import com.dicoding.intermediate.ui.login.LoginActivity
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.getSession().observe(this) { user ->
             if (!user.isLogin) {
-                startActivity(Intent(this, WelcomeActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
         }
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
         playAnimation()
 
         viewModel.fetchStories()
+
+        viewModel.error.observe(this) { errorMessage ->
+            // Handle error here, e.g., show a Toast or Snackbar
+        }
     }
 
     private fun setupView() {

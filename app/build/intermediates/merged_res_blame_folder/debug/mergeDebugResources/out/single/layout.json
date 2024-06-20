@@ -1,19 +1,23 @@
 [
     {
-        "merged": "com.dicoding.intermediate.app-mergeDebugResources-39:/layout/activity_signup.xml",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_signup.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-mergeDebugResources-39:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-mergeDebugResources-39:/layout/activity_main.xml",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_main.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-mergeDebugResources-39:\\layout\\story_list.xml",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\story_list.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-mergeDebugResources-39:/layout/activity_welcome.xml",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_welcome.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-mergeDebugResources-39:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-mergeDebugResources-39:/layout/story_list.xml",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/story_list.xml"
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-mergeDebugResources-39:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-mergeDebugResources-39:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\AZRIEL\\.gradle\\daemon\\8.6\\com.dicoding.intermediate.app-main-42:\\layout\\activity_login.xml"
     },
     {
         "merged": "com.dicoding.intermediate.app-mergeDebugResources-39:/layout/activity_login.xml",

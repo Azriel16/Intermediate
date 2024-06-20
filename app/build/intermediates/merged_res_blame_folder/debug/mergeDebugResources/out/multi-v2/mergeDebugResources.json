@@ -1903,7 +1903,7 @@
                     }
                 },
                 {
-                    "source": "F:\\Belajar\\Android\\Intermediate\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "F:\\Belajar\\Intermediate\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -3604,25 +3604,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Belajar\\Android\\Intermediate\\app\\src\\main\\res\\values\\attrs.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "4",
-                        "endColumns": "24",
-                        "endOffsets": "176"
-                    },
-                    "to": {
-                        "startLines": "11330",
-                        "startColumns": "4",
-                        "startOffsets": "719711",
-                        "endLines": "11332",
-                        "endColumns": "24",
-                        "endOffsets": "719827"
-                    }
-                },
-                {
                     "source": "C:\\Users\\AZRIEL\\.gradle\\caches\\transforms-4\\84ddb47ba2afd557bd4f2fbc2d862519\\transformed\\viewpager2-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -3699,25 +3680,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Belajar\\Android\\Intermediate\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,327",
-                        "endLines": "5,7",
-                        "endColumns": "12,72",
-                        "endOffsets": "321,395"
-                    },
-                    "to": {
-                        "startLines": "2497,6416",
-                        "startColumns": "4,4",
-                        "startOffsets": "175000,448695",
-                        "endLines": "2500,6416",
-                        "endColumns": "12,71",
-                        "endOffsets": "175115,448762"
-                    }
-                },
-                {
                     "source": "C:\\Users\\AZRIEL\\.gradle\\caches\\transforms-4\\e31e92ae8dbbe858dbcf776a98fa105b\\transformed\\glide-4.13.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -3754,23 +3716,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Belajar\\Android\\Intermediate\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2,5,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,140,97",
-                        "endColumns": "41,38,41",
-                        "endOffsets": "92,174,134"
-                    },
-                    "to": {
-                        "startLines": "641,938,961",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "32859,54997,56574",
-                        "endColumns": "41,38,41",
-                        "endOffsets": "32896,55031,56611"
-                    }
-                },
-                {
                     "source": "C:\\Users\\AZRIEL\\.gradle\\caches\\transforms-4\\d6cc755976f58c45dee8e52e7fd29ba2\\transformed\\lifecycle-runtime-2.6.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -3788,7 +3733,7 @@
                     }
                 },
                 {
-                    "source": "F:\\Belajar\\Android\\Intermediate\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "F:\\Belajar\\Intermediate\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1,20,7,8,15,3,16,11,14,4,13,9,10,19,2,12,6,5",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -3877,6 +3822,25 @@
                     }
                 },
                 {
+                    "source": "F:\\Belajar\\Intermediate\\app\\src\\main\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "4",
+                        "endColumns": "24",
+                        "endOffsets": "176"
+                    },
+                    "to": {
+                        "startLines": "11330",
+                        "startColumns": "4",
+                        "startOffsets": "719711",
+                        "endLines": "11332",
+                        "endColumns": "24",
+                        "endOffsets": "719827"
+                    }
+                },
+                {
                     "source": "C:\\Users\\AZRIEL\\.gradle\\caches\\transforms-4\\1ed675010668a033646a967c244c2eb6\\transformed\\coordinatorlayout-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -3915,6 +3879,23 @@
                     }
                 },
                 {
+                    "source": "F:\\Belajar\\Intermediate\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2,5,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,140,97",
+                        "endColumns": "41,38,41",
+                        "endOffsets": "92,174,134"
+                    },
+                    "to": {
+                        "startLines": "641,938,961",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "32859,54997,56574",
+                        "endColumns": "41,38,41",
+                        "endOffsets": "32896,55031,56611"
+                    }
+                },
+                {
                     "source": "C:\\Users\\AZRIEL\\.gradle\\caches\\transforms-4\\c6539c3f84c3e67bdf4ff64109d88d83\\transformed\\activity-1.9.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -3946,6 +3927,25 @@
                         "startOffsets": "124241",
                         "endColumns": "49",
                         "endOffsets": "124286"
+                    }
+                },
+                {
+                    "source": "F:\\Belajar\\Intermediate\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,327",
+                        "endLines": "5,7",
+                        "endColumns": "12,72",
+                        "endOffsets": "321,395"
+                    },
+                    "to": {
+                        "startLines": "2497,6416",
+                        "startColumns": "4,4",
+                        "startOffsets": "175000,448695",
+                        "endLines": "2500,6416",
+                        "endColumns": "12,71",
+                        "endOffsets": "175115,448762"
                     }
                 },
                 {

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="navy">#2D3D4F</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">StoryApp</string>
+    <string name="detail_description">Deskripsi Story</string>
+    <string name="email">Email</string>
+    <string name="email_error">Email Invalid</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="login">Masuk</string>
+    <string name="logout">Keluar</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
+    <string name="name">Nama</string>
+    <string name="password">Password</string>
+    <string name="password_error">Password harus berisi 8 karakter</string>
+    <string name="photo_story">Judul</string>
+    <string name="signup">Daftar</string>
+    <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_welcome_page">Selamat datang di Dicoding!</string>
+    <style name="Base.Theme.Intermediate" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Intermediate" parent="Base.Theme.Intermediate"/>
+    <declare-styleable name="CustomEditText">
+        <attr format="integer" name="inputType"/>
+    </declare-styleable>
+</resources>

@@ -12,7 +12,7 @@
         android:layout_width="400dp"
         android:layout_height="223dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/image_login"
+        android:src="@drawable/image_auth"
         app:layout_constraintBottom_toTopOf="@+id/titleTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

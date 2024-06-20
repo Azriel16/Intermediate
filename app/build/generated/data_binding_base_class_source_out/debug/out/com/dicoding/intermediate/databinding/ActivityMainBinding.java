@@ -5,12 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -24,37 +21,15 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Guideline guidelineHorizontal;
-
-  @NonNull
-  public final Guideline guidelineHorizontal3;
-
-  @NonNull
-  public final ImageView imageView;
-
-  @NonNull
   public final Button logoutButton;
-
-  @NonNull
-  public final TextView messageTextView;
-
-  @NonNull
-  public final TextView nameTextView;
 
   @NonNull
   public final RecyclerView rvListStory;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Guideline guidelineHorizontal, @NonNull Guideline guidelineHorizontal3,
-      @NonNull ImageView imageView, @NonNull Button logoutButton, @NonNull TextView messageTextView,
-      @NonNull TextView nameTextView, @NonNull RecyclerView rvListStory) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button logoutButton,
+      @NonNull RecyclerView rvListStory) {
     this.rootView = rootView;
-    this.guidelineHorizontal = guidelineHorizontal;
-    this.guidelineHorizontal3 = guidelineHorizontal3;
-    this.imageView = imageView;
     this.logoutButton = logoutButton;
-    this.messageTextView = messageTextView;
-    this.nameTextView = nameTextView;
     this.rvListStory = rvListStory;
   }
 
@@ -85,39 +60,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.guidelineHorizontal;
-      Guideline guidelineHorizontal = ViewBindings.findChildViewById(rootView, id);
-      if (guidelineHorizontal == null) {
-        break missingId;
-      }
-
-      id = R.id.guidelineHorizontal3;
-      Guideline guidelineHorizontal3 = ViewBindings.findChildViewById(rootView, id);
-      if (guidelineHorizontal3 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
-        break missingId;
-      }
-
       id = R.id.logoutButton;
       Button logoutButton = ViewBindings.findChildViewById(rootView, id);
       if (logoutButton == null) {
-        break missingId;
-      }
-
-      id = R.id.messageTextView;
-      TextView messageTextView = ViewBindings.findChildViewById(rootView, id);
-      if (messageTextView == null) {
-        break missingId;
-      }
-
-      id = R.id.nameTextView;
-      TextView nameTextView = ViewBindings.findChildViewById(rootView, id);
-      if (nameTextView == null) {
         break missingId;
       }
 
@@ -127,9 +72,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, guidelineHorizontal,
-          guidelineHorizontal3, imageView, logoutButton, messageTextView, nameTextView,
-          rvListStory);
+      return new ActivityMainBinding((ConstraintLayout) rootView, logoutButton, rvListStory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

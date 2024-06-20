@@ -20,10 +20,9 @@ import com.dicoding.intermediate.ui.login.LoginActivity
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var storyAdapter: StoryAdapter
-    private val token: String = "YOUR_AUTH_TOKEN"
 
     private val viewModel by viewModels<MainViewModel> {
-        ViewModelFactory.getInstance(this, token)
+        ViewModelFactory.getInstance(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,12 +40,11 @@ class MainActivity : AppCompatActivity() {
         setupView()
         setupAction()
         setupRecyclerView()
-        playAnimation()
 
         viewModel.fetchStories()
 
         viewModel.error.observe(this) { errorMessage ->
-            // Handle error here, e.g., show a Toast or Snackbar
+
         }
     }
 
@@ -79,20 +77,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun playAnimation() {
-        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
-            duration = 6000
-            repeatCount = ObjectAnimator.INFINITE
-            repeatMode = ObjectAnimator.REVERSE
-        }.start()
 
-        val name = ObjectAnimator.ofFloat(binding.nameTextView, View.ALPHA, 1f).setDuration(100)
-        val message = ObjectAnimator.ofFloat(binding.messageTextView, View.ALPHA, 1f).setDuration(100)
-        val logout = ObjectAnimator.ofFloat(binding.logoutButton, View.ALPHA, 1f).setDuration(100)
-
-        AnimatorSet().apply {
-            playSequentially(name, message, logout)
-            startDelay = 100
-        }.start()
-    }
 }

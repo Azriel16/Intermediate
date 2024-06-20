@@ -3025,9 +3025,8 @@ int drawable ic_mtrl_chip_checked_black 0x7f07009b
 int drawable ic_mtrl_chip_checked_circle 0x7f07009c
 int drawable ic_mtrl_chip_close_circle 0x7f07009d
 int drawable ic_search_black_24 0x7f07009e
+int drawable image_auth 0x7f0700ef
 int drawable image_dicoding 0x7f07009f
-int drawable image_login 0x7f0700a0
-int drawable image_signup 0x7f0700a1
 int drawable indeterminate_static 0x7f0700a3
 int drawable m3_avd_hide_password 0x7f0700a4
 int drawable m3_avd_show_password 0x7f0700a5
@@ -3317,8 +3316,6 @@ int id graph_wrap 0x7f0900d2
 int id group_divider 0x7f0900d3
 int id grouping 0x7f0900d4
 int id groups 0x7f0900d5
-int id guidelineHorizontal 0x7f0900d6
-int id guidelineHorizontal3 0x7f0900d7
 int id header_title 0x7f0900d9
 int id hide_ime_id 0x7f0900da
 int id hideable 0x7f0900db
@@ -3383,7 +3380,6 @@ int id material_timepicker_view 0x7f090115
 int id material_value_index 0x7f090116
 int id matrix 0x7f090117
 int id message 0x7f090118
-int id messageTextView 0x7f090119
 int id middle 0x7f09011a
 int id mini 0x7f09011b
 int id month_grid 0x7f09011c

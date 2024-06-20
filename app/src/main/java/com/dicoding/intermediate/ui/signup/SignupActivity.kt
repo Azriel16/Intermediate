@@ -43,12 +43,7 @@ class SignupActivity : AppCompatActivity() {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
-            if (username.length < 5) {
-                binding.nameEditTextLayout.error = "Username tidak boleh kurang dari 5 karakter"
-                return@setOnClickListener
-            } else {
-                binding.nameEditTextLayout.error = null
-            }
+
 
             if (!email.contains(".com")) {
                 binding.emailEditTextLayout.error = "Email harus memiliki '.com'"

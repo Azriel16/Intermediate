@@ -2,6 +2,7 @@ package com.dicoding.intermediate.data
 
 import com.dicoding.intermediate.data.pref.UserModel
 import com.dicoding.intermediate.data.pref.UserPreference
+import com.dicoding.intermediate.data.remote.response.LoginResponse
 import com.dicoding.intermediate.data.remote.response.StoryResponse
 import com.dicoding.intermediate.data.remote.retrofit.ApiService
 import kotlinx.coroutines.flow.Flow
@@ -11,6 +12,10 @@ class UserRepository private constructor(
     private val userPreference: UserPreference,
     private val apiService: ApiService
 ) {
+
+    suspend fun getLogin(email: String, password: String): LoginResponse {
+        return apiService.login(email, password)
+    }
 
     suspend fun saveSession(user: UserModel) {
         userPreference.saveSession(user)

@@ -3026,9 +3026,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable image_auth
 drawable image_dicoding
-drawable image_login
-drawable image_signup
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3318,8 +3317,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id guidelineHorizontal
-id guidelineHorizontal3
 id header_title
 id hide_ime_id
 id hideable
@@ -3384,7 +3381,6 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
-id messageTextView
 id middle
 id mini
 id month_grid

@@ -7,6 +7,7 @@ import com.dicoding.intermediate.data.UserRepository
 import com.dicoding.intermediate.di.Injection
 import com.dicoding.intermediate.ui.login.LoginViewModel
 import com.dicoding.intermediate.ui.main.MainViewModel
+import com.dicoding.intermediate.ui.signup.SignupViewModel
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -19,6 +20,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
                 LoginViewModel(repository) as T
             }
+            modelClass.isAssignableFrom(SignupViewModel::class.java) -> {
+                SignupViewModel() as T
+            }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
     }
@@ -27,10 +31,10 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
         @Volatile
         private var INSTANCE: ViewModelFactory? = null
         @JvmStatic
-        fun getInstance(context: Context, token: String): ViewModelFactory {
+        fun getInstance(context: Context): ViewModelFactory {
             return INSTANCE ?: synchronized(this) {
-                INSTANCE ?: ViewModelFactory(Injection.provideRepository(context, token))
-            }.also { INSTANCE = it }
+                INSTANCE ?: ViewModelFactory(Injection.provideRepository(context)).also { INSTANCE = it }
+            }
         }
     }
 }

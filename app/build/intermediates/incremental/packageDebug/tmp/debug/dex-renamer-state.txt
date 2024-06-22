@@ -1,4 +1,4 @@
-#Sat Jun 22 19:57:31 WIB 2024
+#Sat Jun 22 20:09:49 WIB 2024
 base.0=F\:\\Belajar\\Intermediate\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=F\:\\Belajar\\Intermediate\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=F\:\\Belajar\\Intermediate\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex

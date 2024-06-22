@@ -13,7 +13,7 @@ class StoryPagingSource(
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, ListStoryItem> {
         return try {
             val position = params.key ?: 1
-            val response = apiService.getStories("Bearer $token", position, params.loadSize)
+            val response = apiService.getStories("Bearer $token", position, params.loadSize, 0)
             val storyList = response.story
 
             LoadResult.Page(

@@ -142,14 +142,10 @@ class UploadActivity : AppCompatActivity() {
 
             lifecycleScope.launch {
                 binding.progressBar.visibility = View.VISIBLE
-                try {
-                    val response = uploadViewModel.uploadImage(filePart, descriptionRequestBody, null, null)
-                    Toast.makeText(this@UploadActivity, response.message, Toast.LENGTH_SHORT).show()
+                val response = uploadViewModel.uploadImage(filePart, descriptionRequestBody, null, null)
+                Toast.makeText(this@UploadActivity, response.message, Toast.LENGTH_SHORT).show()
+                if (response.error == false) { // Ensure response.error is handled safely
                     navigateToMainActivity()
-                } catch (e: Exception) {
-                    Toast.makeText(this@UploadActivity, e.message, Toast.LENGTH_SHORT).show()
-                } finally {
-                    binding.progressBar.visibility = View.GONE
                 }
             }
         } else {

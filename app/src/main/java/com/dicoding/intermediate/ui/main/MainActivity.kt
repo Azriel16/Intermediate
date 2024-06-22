@@ -13,6 +13,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.intermediate.R
 import com.dicoding.intermediate.databinding.ActivityMainBinding
 import com.dicoding.intermediate.ui.ViewModelFactory
@@ -78,7 +79,13 @@ class MainActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         storyAdapter = StoryAdapter()
         binding.rvListStory.layoutManager = LinearLayoutManager(this)
-        binding.rvListStory.adapter = storyAdapter
+        storyAdapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+            override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
+                if (positionStart == 0) {
+                    binding.rvListStory.layoutManager?.scrollToPosition(0)
+                }
+            }
+        })
     }
 
     private fun setupFloatingActionButton() {

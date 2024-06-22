@@ -79,6 +79,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         storyAdapter = StoryAdapter()
         binding.rvListStory.layoutManager = LinearLayoutManager(this)
+        binding.rvListStory.adapter = storyAdapter
         storyAdapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
             override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
                 if (positionStart == 0) {

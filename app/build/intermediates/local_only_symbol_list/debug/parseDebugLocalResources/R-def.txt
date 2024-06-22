@@ -11,6 +11,7 @@ drawable baseline_logout_24
 drawable ic_baseline_close_24
 drawable ic_baseline_email_24
 drawable ic_baseline_lock_24
+drawable ic_baseline_map_24
 drawable ic_baseline_person_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -23,6 +24,7 @@ id descriptionEditText
 id emailEditText
 id emailEditTextLayout
 id emailTextView
+id error_msg
 id fab
 id imageView
 id imageView2
@@ -31,7 +33,9 @@ id iv_photo_detail
 id linearLayout
 id loginButton
 id main
+id map
 id menu_logout
+id menu_map
 id nameEditText
 id nameEditTextLayout
 id nameTextView
@@ -39,6 +43,8 @@ id passwordEditText
 id passwordEditTextLayout
 id passwordTextView
 id progressBar
+id progress_bar
+id retry_button
 id rv_list_story
 id signupButton
 id textInputLayout
@@ -52,8 +58,10 @@ id uploadButton
 layout activity_detail_story
 layout activity_login
 layout activity_main
+layout activity_maps
 layout activity_signup
 layout activity_upload
+layout item_loading
 layout story_list
 menu menu_option
 mipmap ic_launcher
@@ -65,6 +73,7 @@ string email_error
 string greeting
 string login
 string logout
+string maps
 string message_login_page
 string message_main_page
 string message_welcome_page
@@ -72,7 +81,9 @@ string name
 string password
 string password_error
 string photo_story
+string retry
 string signup
+string title_activity_maps
 string title_login_page
 string title_signup_page
 string title_welcome_page
@@ -81,3 +92,4 @@ style Theme.Intermediate
 styleable CustomEditText inputType
 xml backup_rules
 xml data_extraction_rules
+xml file_path

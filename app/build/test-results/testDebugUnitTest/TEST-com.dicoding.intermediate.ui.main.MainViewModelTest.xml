@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dicoding.intermediate.ui.main.MainViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-06-22T10:50:28" hostname="DESKTOP-KBM3DCE" time="0.648">
+  <properties/>
+  <testcase name="when Get Paging Stories Should Not Null and Return Data" classname="com.dicoding.intermediate.ui.main.MainViewModelTest" time="0.629"/>
+  <testcase name="when Get Paging Stories Should Match Expected Data" classname="com.dicoding.intermediate.ui.main.MainViewModelTest" time="0.008"/>
+  <testcase name="when Get Paging Stories Empty Should Return No Data" classname="com.dicoding.intermediate.ui.main.MainViewModelTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

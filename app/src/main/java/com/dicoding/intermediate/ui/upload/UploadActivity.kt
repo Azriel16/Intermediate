@@ -4,7 +4,6 @@ import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -15,6 +14,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.intermediate.data.UserRepository
 import com.dicoding.intermediate.data.pref.UserPreference
@@ -28,6 +28,9 @@ import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
+import java.io.File
 
 class UploadActivity : AppCompatActivity() {
 
@@ -37,14 +40,22 @@ class UploadActivity : AppCompatActivity() {
         ViewModelFactory(UserRepository.getInstance(UserPreference.getInstance(dataStore), apiService))
     }
     private var selectedImageUri: Uri? = null
-    private val CAMERA_REQUEST_CODE = 100
-    private val GALLERY_REQUEST_CODE = 200
+    private var currentPhotoPath: String? = null
 
     private val startForResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val data = result.data
             if (data != null) {
-                handleImageResult(data)
+                if (currentPhotoPath != null) {
+                    // Image captured from camera
+                    val file = File(currentPhotoPath!!)
+                    selectedImageUri = Uri.fromFile(file)
+                    binding.imageView3.setImageURI(selectedImageUri)
+                } else if (data.data != null) {
+                    // Image selected from gallery
+                    selectedImageUri = data.data
+                    binding.imageView3.setImageURI(selectedImageUri)
+                }
             } else {
                 Toast.makeText(this, "Failed to get image", Toast.LENGTH_SHORT).show()
             }
@@ -74,32 +85,42 @@ class UploadActivity : AppCompatActivity() {
     }
 
     private fun checkAndRequestPermissions(): Boolean {
-        val cameraPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-        val storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-        val readStoragePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
-
-        val listPermissionsNeeded = ArrayList<String>()
-
-        if (cameraPermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.CAMERA)
-        }
-        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-        }
-        if (readStoragePermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE)
+        val permissions = arrayOf(
+            Manifest.permission.CAMERA,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+        )
+        val listPermissionsNeeded = permissions.filter {
+            ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
         }
 
-        if (listPermissionsNeeded.isNotEmpty()) {
+        return if (listPermissionsNeeded.isNotEmpty()) {
             ActivityCompat.requestPermissions(this, listPermissionsNeeded.toTypedArray(), 1)
-            return false
+            false
+        } else {
+            true
         }
-        return true
     }
 
     private fun openCamera() {
-        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        startForResult.launch(intent)
+        val photoFile: File? = try {
+            Utils().createCustomTempFile(this)
+        } catch (ex: Exception) {
+            Toast.makeText(this, "Error occurred while creating the File", Toast.LENGTH_SHORT).show()
+            null
+        }
+        photoFile?.also {
+            val photoURI: Uri = FileProvider.getUriForFile(
+                this,
+                "com.dicoding.intermediate.fileprovider",
+                it
+            )
+            currentPhotoPath = it.absolutePath
+            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).apply {
+                putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
+            }
+            startForResult.launch(intent)
+        }
     }
 
     private fun openGallery() {
@@ -107,22 +128,16 @@ class UploadActivity : AppCompatActivity() {
         startForResult.launch(intent)
     }
 
-    private fun handleImageResult(data: Intent) {
-        val imageBitmap = data.extras?.get("data") as? Bitmap
-        selectedImageUri = data.data
-        binding.imageView3.setImageURI(selectedImageUri)
-    }
-
     private fun uploadImageAndDescription() {
         val description = binding.descriptionEditText.text.toString().trim()
         if (selectedImageUri != null && description.isNotEmpty()) {
             val photo = Utils().uriToFile(selectedImageUri!!, this)
             val compressedFile = Utils().compressImage(photo)
-            val descriptionRequestBody = RequestBody.create("text/plain".toMediaTypeOrNull(), description)
+            val descriptionRequestBody = description.toRequestBody("text/plain".toMediaTypeOrNull())
             val filePart = MultipartBody.Part.createFormData(
                 "photo",
                 compressedFile.name,
-                RequestBody.create("image/jpeg".toMediaTypeOrNull(), compressedFile)
+                compressedFile.asRequestBody("image/jpeg".toMediaTypeOrNull())
             )
 
             lifecycleScope.launch {

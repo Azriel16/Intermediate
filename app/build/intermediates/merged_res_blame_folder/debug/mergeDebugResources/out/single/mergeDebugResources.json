@@ -1,130 +1,146 @@
 [
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/xml_backup_rules.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/xml/backup_rules.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_maps.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_maps.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/xml_data_extraction_rules.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/xml/data_extraction_rules.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_detail_story.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_detail_story.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_login.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_login.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_image_auth.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/image_auth.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_launcher_background.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_login.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_close_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_close_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/font_poppins.ttf.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/font/poppins.ttf"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_baseline_map_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_baseline_map_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_upload.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_upload.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/xml_backup_rules.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_baseline_add_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/baseline_add_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_baseline_add_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/baseline_add_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/menu_menu_option.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/menu/menu_option.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_signup.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_signup.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_image_dicoding.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/image_dicoding.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_dicoding.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_dicoding.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_upload.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_upload.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/font_poppins.ttf.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/font/poppins.ttf"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_baseline_logout_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/baseline_logout_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_story_list.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/story_list.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_signup.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_signup.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/menu_menu_option.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/menu/menu_option.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_detail_story.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_detail_story.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_lock_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_lock_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_baseline_close_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_baseline_close_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_person_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_person_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_image_auth.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/image_auth.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_baseline_logout_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/baseline_logout_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_baseline_email_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_baseline_email_24.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/layout_activity_main.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/layout/activity_main.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_item_loading.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/item_loading.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/drawable_ic_baseline_email_24.xml.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/drawable/ic_baseline_email_24.xml"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_story_list.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/story_list.xml"
     },
     {
-        "merged": "com.dicoding.intermediate.app-debug-40:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.dicoding.intermediate.app-main-42:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.dicoding.intermediate.app-debug-45:/layout_activity_main.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_baseline_person_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "com.dicoding.intermediate.app-debug-45:/xml_file_path.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/xml/file_path.xml"
+    },
+    {
+        "merged": "com.dicoding.intermediate.app-debug-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.dicoding.intermediate.app-debug-45:/drawable_ic_baseline_lock_24.xml.flat",
+        "source": "com.dicoding.intermediate.app-main-47:/drawable/ic_baseline_lock_24.xml"
     }
 ]

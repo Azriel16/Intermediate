@@ -14,11 +14,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.intermediate.R
-import com.dicoding.intermediate.data.remote.response.Story
 import com.dicoding.intermediate.databinding.ActivityMainBinding
 import com.dicoding.intermediate.ui.ViewModelFactory
 import com.dicoding.intermediate.ui.adapter.StoryAdapter
 import com.dicoding.intermediate.ui.login.LoginActivity
+import com.dicoding.intermediate.ui.maps.MapsActivity
 import com.dicoding.intermediate.ui.upload.UploadActivity
 import kotlinx.coroutines.launch
 
@@ -48,31 +48,17 @@ class MainActivity : AppCompatActivity() {
         setupRecyclerView()
         setupFloatingActionButton()
 
-        viewModel.fetchStories()
-
-        viewModel.stories.observe(this) { stories ->
-            binding.progressBar.visibility = View.GONE
-            val convertedStories = stories.map {
-                Story(
-                    photoUrl = it.photoUrl,
-                    createdAt = it.createdAt,
-                    name = it.name,
-                    description = it.description,
-                    lon = it.lon as? Double,
-                    id = it.id,
-                    lat = it.lat as? Double
-                )
+        lifecycleScope.launch {
+            viewModel.stories.observe(this@MainActivity) { pagingData ->
+                storyAdapter.submitData(lifecycle, pagingData)
             }
-            storyAdapter.updateStories(convertedStories)
         }
 
-        viewModel.error.observe(this) { errorMessage ->
-            binding.progressBar.visibility = View.GONE
-            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
-        }
-
-        viewModel.loading.observe(this) { isLoading ->
-            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+        viewModel.newStory.observe(this) { newStory ->
+            newStory?.let {
+                storyAdapter.refresh()
+                Toast.makeText(this, "New story uploaded!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -90,7 +76,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
-        storyAdapter = StoryAdapter(emptyList())
+        storyAdapter = StoryAdapter()
         binding.rvListStory.layoutManager = LinearLayoutManager(this)
         binding.rvListStory.adapter = storyAdapter
     }
@@ -115,6 +101,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this@MainActivity, LoginActivity::class.java))
                     finish()
                 }
+                true
+            }
+            R.id.menu_map -> {
+                val intent = Intent(this@MainActivity, MapsActivity::class.java)
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)

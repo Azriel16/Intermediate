@@ -26,7 +26,7 @@ class DetailStoryActivity : AppCompatActivity() {
             insets
         }
 
-        val story = intent.getParcelableExtra<Story>(EXTRA_STORY)
+        val story = intent.getParcelableExtra(EXTRA_STORY, Story::class.java)
         if (story != null) {
             binding.apply {
                 Glide.with(this@DetailStoryActivity)
